@@ -1,0 +1,111 @@
+// gateway\front\src\styles\_layouts.scss
+
+@use './variables' as *;
+@use 'sass:math';
+
+.layout {
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-unit;
+    padding: 0 50px !important;
+    background-color: $color-gray-200;
+
+    &-main {
+        flex-grow: 1;
+        background-color: $color-background;
+        border-radius: 10px;
+        padding: 18px 18px;
+        box-shadow: $shadow-hover;
+    }
+
+    &-footer {
+        background-color: $color-background;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 18px;
+        box-shadow: $shadow-hover;
+
+    }
+    &-header {
+        background-color: #ffffff;
+        border-radius: 10px;
+        margin-top: 10px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 18px;
+        box-shadow: $shadow-hover;
+
+        &-links {
+            display: flex;
+            gap: $spacing-unit * 3;
+        }
+
+        &-link {
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+            &:hover {
+                border-bottom: 1px solid $color-primary-dark;
+            }
+            &.active {
+                border-bottom-color: $color-primary;
+            }
+        }
+    }
+
+    &-navBar {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+        padding: 0 0 16px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: transparent;
+
+        &-links {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        } 
+
+        &-btns {
+            display: flex;
+            gap: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+.card {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+    &-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 48px;
+        align-items: flex-start;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    &-form-group {
+        width: 100%;
+        // margin-bottom: 15px;
+    }
+
+}

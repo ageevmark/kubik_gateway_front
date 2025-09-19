@@ -1,0 +1,22 @@
+// _typography.scss
+@use './variables' as *;
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-text;
+  background: $color-background;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: $spacing-unit 0;
+  font-weight: 600;
+  color: $color-gray-900;
+}
+
+p {
+  margin: 0 0 $spacing-unit 0;
+  line-height: 1.6;
+}

@@ -1,0 +1,39 @@
+@use '../variables' as *;
+@use 'sass:math';
+
+input, textarea, select {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid $color-gray-500;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+
+  &:focus {
+    border-color: $color-primary-light;
+    box-shadow: 0 0 8px $color-primary-light;
+    outline: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: math.div($spacing-unit, 2);
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}

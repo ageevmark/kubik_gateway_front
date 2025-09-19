@@ -1,0 +1,28 @@
+@use '../variables' as *;
+
+.table {
+    margin-top: 36px;
+    width: 100%;
+    border-collapse: collapse;
+
+    &-id {
+        width: 20px;
+    }
+
+    &-dates {
+        width: 180px;
+    }
+
+    &-actions{
+        width: 100px;
+    }
+}
+
+.table th, .table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+.table th {
+  background: #f4f4f4;
+}
