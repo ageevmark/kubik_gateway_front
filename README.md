@@ -1,4 +1,5 @@
 # Kubik Gateway Admin Frontend
+Version: 1.0.0
 
 **Frontend admin panel** for Kubik Gateway, built with **Vue 3**, **Vite**, and **SCSS**.
 
@@ -52,35 +53,19 @@ Default dev server: `http://localhost:3002`.
 
 **.env**
 ```ini
-VITE_PORT=3002
+VITE_PORT=
 VITE_APP_NAME=Gateway
-VITE_APP_VERSION=0.0.1
+VITE_APP_VERSION=1.0.0
 ```
 
 **.env.development**
 ```ini
-VITE_GATEWAY_URL=http://localhost:3001
+VITE_GATEWAY_URL=
 ```
 
 **.env.production**
 ```ini
-VITE_GATEWAY_URL=https://api.kubikmall.ru
-```
-
----
-
-## Project Structure
-
-```
-src/
-├─ assets/               # static assets
-├─ components/           # shared UI components
-├─ layouts/              # PublicLayout and AdminLayout
-│  └─ components/        # layout-specific components (navbar)
-├─ styles/               # SCSS styles (_variables, _typography, _layouts, elements)
-├─ utils/                # axios, toastHandler, helpers
-├─ views/                # pages for routes
-└─ router/               # vue-router configuration
+VITE_GATEWAY_URL=
 ```
 
 ---
@@ -146,3 +131,10 @@ All API actions show notifications using `utils/toastHandler.js`:
 - Axios base URL is configured via `.env`  
 - Components follow consistent CRUD patterns  
 - Navbar provides Add, Refresh, and Reload Cache buttons
+
+---
+
+## License
+This project is licensed under the PolyForm Noncommercial 1.0.0 License.  
+You may use, modify, and distribute this project **only for non-commercial purposes**.  
+See the [LICENSE](LICENSE) file for details.
